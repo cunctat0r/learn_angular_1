@@ -12,6 +12,13 @@
 		<br />
 		<input type="text" data-ng-model="name" /> {{ name }}
 	</div>
+	
+	<div class="container" data-ng-init="names=['Joe', 'Bill', 'Ted', 'Max', 'Rajj']">
+		<h3>Looping with the ng-repeat Directive</h3>
+		<ul>
+			<li data-ng-repeat="name in names">{{ name }}</li>
+		</ul>
+	</div>
 		<script src="angular.min.js"></script>
 	</body>
 </html>
