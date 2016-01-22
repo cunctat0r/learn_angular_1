@@ -12,7 +12,7 @@
 	<input type="text" data-ng-model="name" />
 	<br/>
 	<ul>
-		<li data-ng-repeat="cust in customers | filter:name | orderBy: 'city'">{{ cust.name }} - {{ cust.city }}</li>
+		<li data-ng-repeat="cust in customers | filter:name | orderBy: 'city'">{{ cust.name | uppercase }} - {{ cust.city | lowercase}}</li>
 	</ul>
 		<script src="angular.min.js"></script>
 	</body>
